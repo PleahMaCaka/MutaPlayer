@@ -26,6 +26,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.4.3
     version: 3.4.6(svelte@4.1.0)
+  tauri-plugin-positioner-api:
+    specifier: ^0.2.7
+    version: 0.2.7
   tslib:
     specifier: ^2.4.1
     version: 2.6.0
@@ -1135,6 +1138,12 @@ packages:
       locate-character: 3.0.0
       magic-string: 0.30.1
       periscopic: 3.1.0
+    dev: true
+
+  /tauri-plugin-positioner-api@0.2.7:
+    resolution: {integrity: sha512-jwqRHo59UU3aJbffEFkWVhBorjQg1WNeDa4W4eWVnaTqLals+/fqgHdNwTGzG1+LLdaJSS2FUy4XSwEDAWvERQ==}
+    dependencies:
+      '@tauri-apps/api': 1.4.0
     dev: true
 
   /to-regex-range@5.0.1:
