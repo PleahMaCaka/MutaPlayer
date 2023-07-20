@@ -61,7 +61,9 @@
         "width": 800,
         "resizable": false,
         "alwaysOnTop": true,
-        "transparent": true
+        "transparent": true,
+        "skipTaskbar": true,
+        "decorations": false
       }
     ]
   }
