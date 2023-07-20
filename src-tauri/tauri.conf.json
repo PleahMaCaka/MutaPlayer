@@ -55,11 +55,13 @@
     },
     "windows": [
       {
+        "title": "Muta Player",
         "fullscreen": false,
         "height": 600,
-        "resizable": true,
-        "title": "Muta Player",
-        "width": 800
+        "width": 800,
+        "resizable": false,
+        "alwaysOnTop": true,
+        "transparent": true
       }
     ]
   }
