@@ -6,7 +6,7 @@ export async function resizePlayer() {
     const size = await getMonitorSize()
     if (size === undefined)
         throw new Error("Could not get monitor size")
-    await appWindow.setSize(new PhysicalSize(size.width!, size.height! / 5))
+    await appWindow.setSize(new PhysicalSize(size.width!, size.height! / 4.5))
 }
 
 async function getMonitorSize() {
