@@ -15,12 +15,15 @@
       "all": false,
       "window": {
         "setResizable": true
+      },
+      "globalShortcut": {
+        "all": true
       }
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+      "category": "Music",
+      "copyright": "(C) 2023. PleahMaCaka all rights reserved.",
       "deb": {
         "depends": []
       },
@@ -66,7 +69,8 @@
         "alwaysOnTop": true,
         "transparent": true,
         "skipTaskbar": true,
-        "decorations": false
+        "decorations": false,
+        "visible": false
       }
     ]
   }
