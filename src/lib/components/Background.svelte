@@ -3,19 +3,19 @@
 </script>
 
 <div>
-    <div id="player-bg-wrapper"
+    <div id="bg-wrapper"
          style="--border-radius: {borderRadius}px"
     >
-        <div id="player-bg"></div>
+        <div id="bg-image"></div>
     </div>
-    <div id="player-contents">
+    <div id="bg-content-wrapper">
         <slot/>
     </div>
 </div>
 
 
 <style>
-    #player-contents {
+    #bg-content-wrapper {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -23,7 +23,8 @@
         animation: slideDown 1s ease-in-out;
         animation-fill-mode: forwards;
     }
-    #player-bg-wrapper {
+
+    #bg-wrapper {
         position: fixed;
         width: 100%;
         height: 100%;
@@ -44,7 +45,7 @@
         }
     }
 
-    #player-bg {
+    #bg-image {
         width: 100%;
         height: 100%;
         background-color: rgba(80, 80, 80, 0.85);
