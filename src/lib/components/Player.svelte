@@ -1,3 +1,0 @@
-<div>
-    Player Holder!
-</div>
