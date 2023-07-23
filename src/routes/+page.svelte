@@ -20,11 +20,3 @@
 <Background>
     <Player/>
 </Background>
-
-<style>
-
-    h1 {
-        color: red;
-    }
-
-</style>
