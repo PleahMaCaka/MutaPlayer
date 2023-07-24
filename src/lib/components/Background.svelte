@@ -1,5 +1,5 @@
 <script>
-    import "../components/styles/MoveAnimations.css"
+    import "$lib/components/styles/MoveAnimations.css"
 
     let borderRadius = 25
 </script>
