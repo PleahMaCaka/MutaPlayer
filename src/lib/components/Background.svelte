@@ -24,11 +24,15 @@
 
     #bg-wrapper {
         position: absolute;
-        width: 100%;
         height: 100%;
         overflow: hidden;
         box-shadow: inset 0 0 0 1px #BE81FFFF;
         border-radius: var(--border-radius);
+
+        width: 90%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
 
         /* TOP-DOWN mode, if reverse this: Uwu  */
         /*border-radius: 0 0 var(--border-radius) var(--border-radius);*/
