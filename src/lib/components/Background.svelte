@@ -16,8 +16,8 @@
 
 <style>
     #bg-content-wrapper {
-        width: 99%;
-        height: 99%;
+        width: 100%;
+        height: 100%;
         padding: 0.4% 0.4% 0 0.4%;
         position: absolute;
     }
