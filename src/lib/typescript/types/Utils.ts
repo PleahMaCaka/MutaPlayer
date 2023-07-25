@@ -1,6 +1,8 @@
+// I know URL is included in URI, but I want to be explicit
 export type URL = `https://${string}` | `http://${string}`
 
 export type URI = `${string}:${string}`
+
 
 export type AtoZLower =
     'a'
