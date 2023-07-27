@@ -20,12 +20,12 @@
         justify-content: center;
         align-items: center;
         width: 200px;
-        height: 95vh;
+        height: 100vh;
         margin-left: 1%;
     }
     #thumb-frame {
-        width: 200px;
-        height: 200px;
+        width: 170px;
+        height: 170px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
         border: 2px solid rgba(0, 0, 0, 0.5);
         border-radius: 5%;
