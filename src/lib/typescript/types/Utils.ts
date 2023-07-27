@@ -3,6 +3,14 @@ export type URL = `https://${string}` | `http://${string}`
 
 export type URI = `${string}:${string}`
 
+export type Hex = `#${string}`
+
+export type RGB = `rgb(${number}, ${number}, ${number})` | `rgb(${number},${number},${number})`
+
+export type RGBA = `rgba(${number}, ${number}, ${number}, ${number})` | `rgba(${number},${number},${number},${number})`
+
+export type CSSColor = Hex | RGB | RGBA
+
 
 export type AtoZLower =
     'a'

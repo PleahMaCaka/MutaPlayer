@@ -1,13 +1,34 @@
-<script>
+<script lang="ts">
+    import { playerState as state } from "$lib/api/PlayerState"
     import "$lib/components/styles/MoveAnimations.css"
+    import type { CSSColor } from "$lib/typescript/types/Utils"
 
     let borderRadius = 25
+
+    let isImage: boolean = false
+    let source: string | undefined
+    let color: CSSColor | undefined
+
+    state.subscribe(value => {
+        isImage = value.background.image !== undefined
+        source = value.background.image
+        color = value.background.color
+    })
 </script>
 
 <div id="bg-wrapper"
      style="--border-radius: {borderRadius}px"
 >
-    <div id="bg-image"></div>
+    {#if isImage}
+        <div class="bg-image"
+             style="--bg-image: url('{source}')"
+        ></div>
+    {:else}
+        <div class="bg-image"
+             style="--bg-color: {color}"
+        ></div>
+    {/if}
+
     <div id="bg-content-wrapper">
         <slot/>
     </div>
@@ -43,11 +64,12 @@
 
     }
 
-    #bg-image {
+    .bg-image {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-image: url(https://cdn.discordapp.com/attachments/966760602720665720/1131937730507579452/example.png);
+        background-image: var(--bg-image);
+        background-color: var(--bg-color);
         z-index: -100;
         filter: blur(50px) brightness(0.75);
     }
