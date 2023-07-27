@@ -4,6 +4,7 @@
     import Background from "$lib/components/Background.svelte"
     import Player from "$lib/components/player/Player.svelte"
     import { register, unregister } from "@tauri-apps/api/globalShortcut"
+    import { appWindow } from "@tauri-apps/api/window"
     import { onMount } from "svelte"
 
     onMount(async () => {
@@ -11,6 +12,7 @@
 
         await unregister("CommandOrControl+`") // temp
         await register("CommandOrControl+`", async () => {
+            await appWindow.setFocus()
             await togglePlayer()
         })
     })
