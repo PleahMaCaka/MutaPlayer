@@ -15,8 +15,8 @@
         align-items: center;
         justify-content: flex-start;
 
-        margin-top: 0.4%;
-        margin-left: 0.5%;
+        margin-top: 1%;
+        margin-left: 1%;
 
         gap: 5%;
     }
