@@ -18,7 +18,7 @@
     #bg-content-wrapper {
         width: 100%;
         height: 100%;
-        padding: 0.4% 0.4% 0 0.4%;
+        padding: 0;
         position: absolute;
     }
 
@@ -30,7 +30,6 @@
         border-radius: var(--border-radius);
 
         width: 75%;
-        margin: 0 auto;
         left: 0;
         right: 0;
 
