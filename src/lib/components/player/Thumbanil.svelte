@@ -21,7 +21,7 @@
         align-items: center;
         width: 200px;
         height: 95vh;
-        margin: 0 0 0 1.5%;
+        margin-left: 1%;
     }
     #thumb-frame {
         width: 200px;
