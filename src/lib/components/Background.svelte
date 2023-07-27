@@ -29,7 +29,7 @@
         box-shadow: inset 0 0 0 1px #BE81FFFF;
         border-radius: var(--border-radius);
 
-        width: 90%;
+        width: 75%;
         margin: 0 auto;
         left: 0;
         right: 0;
