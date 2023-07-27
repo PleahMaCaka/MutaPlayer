@@ -30,6 +30,7 @@
         border-radius: var(--border-radius);
 
         width: 75%;
+        margin: 0 auto;
         left: 0;
         right: 0;
 
