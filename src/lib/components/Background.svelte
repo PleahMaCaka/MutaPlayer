@@ -6,13 +6,11 @@
     let borderRadius = 25
 
     let isImage: boolean = false
-    let source: string | undefined
-    let color: CSSColor | undefined
+    let source: string | undefined = $state.bg.source
+    let color: CSSColor | undefined = $state.bg.color
 
     state.subscribe(value => {
-        isImage = value.background.image !== undefined
-        source = value.background.image
-        color = value.background.color
+        isImage = value.bg.source !== undefined
     })
 </script>
 
