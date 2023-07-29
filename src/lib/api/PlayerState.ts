@@ -9,6 +9,7 @@ export interface PlayerState {
     music?: {
         title: string,
         subtitle?: string
+        isPlaying: boolean
     }
 }
 
@@ -20,5 +21,6 @@ export const playerState = writable<PlayerState>({
     music: {
         title: "Title",
         subtitle: "Author",
+        isPlaying: false
     }
 })

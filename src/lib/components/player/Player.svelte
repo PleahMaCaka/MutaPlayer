@@ -4,6 +4,7 @@
     import Holder from "$lib/components/player/Holder.svelte";
     import Title from "$lib/components/player/Title.svelte";
     import SubTitle from "$lib/components/player/SubTitle.svelte";
+    import Controller from "$lib/components/player/control/Controller.svelte";
 </script>
 
 <div id="player-wrapper">
@@ -16,6 +17,8 @@
         <!-- to white or black -->
         <Title/>
         <SubTitle/>
+
+        <Controller/>
     </div>
 </div>
 
