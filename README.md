@@ -7,6 +7,11 @@
 | in the IDE                               |
 | ![Preview](.github/README/preview.png)   |
 
+## Shortcuts
+
+- Open the player
+    - `Ctrl` + ``` ` ``` (Backtick, Grave)
+
 ## Developing
 
 ```bash
