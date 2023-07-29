@@ -3,6 +3,8 @@ export type URL = `https://${string}` | `http://${string}`
 
 export type URI = `${string}:${string}`
 
+export type SVG = `${string}.svg`
+
 export type Hex = `#${string}`
 
 export type RGB = `rgb(${number}, ${number}, ${number})` | `rgb(${number},${number},${number})`

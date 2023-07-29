@@ -1,11 +1,15 @@
 <script lang="ts">
-    import type { URI, URL } from "$lib/typescript/types/Utils"
+    import type { SVG, URI, URL } from "$lib/typescript/types/Utils"
 
     export let execute: () => void
 
     export let tooltip: string = "Description not provided."
 
-    export let icon: URI | URL
+    /**
+     * If not add string in a type hint, cannot be use imported SVG just
+     * The meaning of the type is reduced, but it is unavoidable.
+     */
+    export let icon: URI | URL | SVG | string
 </script>
 
 
