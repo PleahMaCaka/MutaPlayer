@@ -11,7 +11,8 @@ vite.config.ts.timestamp-*
 
 .idea
 .fleet
-.vscode
+.vscode/**
+!.vscode/settings.json
 
 **/*.js
 !svelte.config.js
