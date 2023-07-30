@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "sourceMap": false,
     "strict": true,
-    "watch": false
+    "outDir": "build"
   }
   // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
   //

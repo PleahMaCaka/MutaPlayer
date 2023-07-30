@@ -4,7 +4,7 @@
     "beforeBuildCommand": "pnpm run build",
     "beforeDevCommand": "pnpm run dev",
     "devPath": "http://localhost:5173",
-    "distDir": "../public"
+    "distDir": "../build"
   },
   "package": {
     "productName": "muta",
@@ -38,7 +38,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "io.github.pleahmacaka",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
