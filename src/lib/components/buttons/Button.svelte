@@ -12,14 +12,8 @@
     export let icon: URI | URL | SVG | string
 </script>
 
-
-<button class="side-btn"
-        on:click={execute
-    }>
-    <img class="side-btn-img"
-         alt={tooltip}
-         src={icon}
-    />
+<button class="side-btn" on:click={execute}>
+    <img class="side-btn-img" alt={tooltip} src={icon} />
 </button>
 
 <style>
