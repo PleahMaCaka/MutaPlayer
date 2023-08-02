@@ -52,7 +52,7 @@
 
 <style>
     #player-controller {
-        margin-top: 3rem;
+        margin-top: 20vh;
         background-color: #6a5877;
         border-radius: 1rem;
     }

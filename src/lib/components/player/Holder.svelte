@@ -3,6 +3,6 @@
 <style>
     .holder {
         width: 100%;
-        height: 38px;
+        height: 15vh;
     }
 </style>
