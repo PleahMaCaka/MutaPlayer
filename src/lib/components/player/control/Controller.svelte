@@ -4,7 +4,7 @@
     import PlaySVG from "$lib/static/player/controller/play.svg"
     import PauseSVG from "$lib/static/player/controller/pause.svg"
     import NextSVG from "$lib/static/player/controller/skip-forward.svg"
-    import {playerState} from "$lib/api/PlayerState"
+    import {playerState} from "$lib/api/player/PlayerState"
 
     function previous() {
         console.log("Previous")

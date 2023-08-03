@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { initPlayer } from "$lib/api/InitPlayer"
+    import { initPlayer } from "$lib/api/player/InitPlayer"
     import { togglePlayer } from "$lib/api/shortcuts/ToggleWindow"
     import Background from "$lib/components/Background.svelte"
     import Player from "$lib/components/player/Player.svelte"
