@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { toggleConfigWindow } from "$lib/api/config/ToggleConfigWindow"
+    import { toggleSettingsWindow } from "$lib/api/config/ToggleSettingsWindow"
     import Button from "$lib/components/buttons/Button.svelte"
     import moreHorizontal from "$lib/static/player/side/more-horizontal.svg"
 
 
     const execute = () => {
         console.log("Open configuration!")
-        toggleConfigWindow()
+        toggleSettingsWindow()
     }
 </script>
 
