@@ -4,7 +4,7 @@
 
 import { writable } from "svelte/store"
 
-interface MutaConfig {
+interface ConfigStore {
     shortcuts?: {
         toggle?: string
     }
@@ -13,7 +13,7 @@ interface MutaConfig {
     }
 }
 
-export const defaultMutaConfig: MutaConfig = {
+export const defaultMutaConfig: ConfigStore = {
     ui: {
         borderRadius: 25
     },
@@ -28,12 +28,12 @@ export const defaultMutaConfig: MutaConfig = {
 
 // TODO : load config from config path
 // noinspection UnnecessaryLocalVariableJS
-export const loadedMutaConfig: MutaConfig = defaultMutaConfig
+export const loadedMutaConfig: ConfigStore = defaultMutaConfig
 
 // load config first, then else override missing configs to default
-const completeMutaConfig: MutaConfig = {
+const completeMutaConfig: ConfigStore = {
     ...defaultMutaConfig,
     ...loadedMutaConfig,
 }
 
-export const mutaConfig = writable<MutaConfig>(completeMutaConfig);
+export const mutaConfig = writable<ConfigStore>(completeMutaConfig);

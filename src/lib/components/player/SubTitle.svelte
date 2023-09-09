@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { playerState } from "$lib/api/player/PlayerState"
+    import { playerState } from "$lib/api/stores/StateStore"
 
     let subtitle: string | undefined = $playerState.music?.subtitle
 </script>
