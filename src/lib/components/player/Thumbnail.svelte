@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { URI } from "$lib/typescript/types/Utils"
+    import type { URI } from "$lib/types/Utils"
 
     export let src: URI | URL
 </script>

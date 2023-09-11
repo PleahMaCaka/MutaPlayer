@@ -1,7 +1,7 @@
 <script lang="ts">
     import { playerState as state } from "$lib/api/stores/StateStore"
     import "$lib/components/styles/MoveAnimations.css"
-    import type { CSSColor } from "$lib/typescript/types/Utils"
+    import type { CSSColor } from "$lib/types/Utils"
 
     let borderRadius = 25
 

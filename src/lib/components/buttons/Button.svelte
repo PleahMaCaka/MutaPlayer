@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { SVG, URI, URL } from "$lib/typescript/types/Utils"
+    import type { SVG, URI, URL } from "$lib/types/Utils"
 
     export let execute: () => void
 

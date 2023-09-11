@@ -1,4 +1,4 @@
-import type { CSSColor, URI } from "$lib/typescript/types/Utils"
+import type { CSSColor, URI } from "$lib/types/Utils"
 import { writable } from "svelte/store"
 
 export interface StateStore {
