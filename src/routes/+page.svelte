@@ -3,6 +3,7 @@
     import { togglePlayer } from "$lib/api/shortcuts/ToggleWindow"
     import Background from "$lib/components/Background.svelte"
     import Player from "$lib/components/player/Player.svelte"
+    import Logger from "$lib/utils/Logger"
     import { register, unregister } from "@tauri-apps/api/globalShortcut"
     import { appWindow } from "@tauri-apps/api/window"
     import { onMount } from "svelte"
@@ -15,6 +16,13 @@
             await appWindow.setFocus()
             await togglePlayer()
         })
+
+        Logger.config = {
+            debugMode: true,
+            useCSSColor: true,
+            disableDate: true,
+        }
+        Logger.info("Hello, Music Lover!")
     })
 
 </script>
