@@ -23,6 +23,8 @@ export async function toggleSettingsWindow() {
     }
 }
 
-await configWindow.onCloseRequested(() => {
-    configWindow = new WebviewWindow(label, windowOptions)
-})
+(async () => {
+    await configWindow.onCloseRequested(() => {
+        configWindow = new WebviewWindow(label, windowOptions)
+    })
+})()

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { playerState as state } from "$lib/api/stores/StateStore"
+    import { mutaState as state } from "$lib/api/stores/MutaState"
     import "$lib/components/styles/MoveAnimations.css"
     import type { CSSColor } from "$lib/types/Utils"
 

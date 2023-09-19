@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { playerState } from "$lib/api/stores/StateStore"
+    import { mutaState } from "$lib/api/stores/MutaState"
 
-    let title: string | undefined = $playerState.music?.title
+    let title: string | undefined = $mutaState.music?.title
 </script>
 
 <div>

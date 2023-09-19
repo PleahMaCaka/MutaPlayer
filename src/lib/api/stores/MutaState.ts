@@ -1,7 +1,7 @@
 import type { CSSColor, URI } from "$lib/types/Utils"
 import { writable } from "svelte/store"
 
-export interface StateStore {
+export interface MutaState {
     bg: {
         color: CSSColor | undefined
         image?: URI | undefined
@@ -10,10 +10,11 @@ export interface StateStore {
         title: string,
         subtitle?: string
         isPlaying: boolean
-    }
+    },
+    isVisible: boolean
 }
 
-export const playerState = writable<StateStore>({
+export const mutaState = writable<MutaState>({
     bg: {
         color: "rgba(190,147,255,0.64)",
         image: "https://cdn.discordapp.com/attachments/968323801253306428/1133442471045648394/thumbanil.png"
@@ -22,5 +23,6 @@ export const playerState = writable<StateStore>({
         title: "Title",
         subtitle: "Author",
         isPlaying: false
-    }
+    },
+    isVisible: false
 })
