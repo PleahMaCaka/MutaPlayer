@@ -33,7 +33,7 @@ export const loadedMutaConfig: ConfigStore = defaultMutaConfig
 // load config first, then else override missing configs to default
 const completeMutaConfig: ConfigStore = {
     ...defaultMutaConfig,
-    ...loadedMutaConfig,
+    ...loadedMutaConfig
 }
 
 export const mutaConfig = writable<ConfigStore>(completeMutaConfig);

@@ -8,8 +8,8 @@
 </script>
 
 <Button
-    icon={UpSVG}
     execute={execute}
+    icon={UpSVG}
     tooltip="Pin player"
 />
 

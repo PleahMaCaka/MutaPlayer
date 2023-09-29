@@ -11,7 +11,7 @@
 </script>
 
 <Button
-    tooltip="Open Configuration!"
     execute={execute}
     icon={moreHorizontal}
+    tooltip="Open Configuration!"
 />

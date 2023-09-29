@@ -13,7 +13,7 @@
 </script>
 
 <button class="side-btn" on:click={execute}>
-    <img class="side-btn-img" alt={tooltip} src={icon} />
+    <img alt={tooltip} class="side-btn-img" src={icon} />
 </button>
 
 <style>

@@ -6,8 +6,8 @@
 
 <div id="thumb-wrapper">
     <div id="thumb-frame">
-        <img id="thumb-img"
-             alt="Thumbnail"
+        <img alt="Thumbnail"
+             id="thumb-img"
              src={src}
         />
     </div>
@@ -23,6 +23,7 @@
         height: 100vh;
         margin-left: 1%;
     }
+
     #thumb-frame {
         width: 170px;
         height: 170px;

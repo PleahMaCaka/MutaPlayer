@@ -1,10 +1,10 @@
 <script lang="ts">
+    import { mutaState } from "$lib/api/stores/MutaState"
     import Button from "$lib/components/buttons/Button.svelte"
-    import PreviousSVG from "$lib/static/player/controller/skip-back.svg"
-    import PlaySVG from "$lib/static/player/controller/play.svg"
     import PauseSVG from "$lib/static/player/controller/pause.svg"
+    import PlaySVG from "$lib/static/player/controller/play.svg"
+    import PreviousSVG from "$lib/static/player/controller/skip-back.svg"
     import NextSVG from "$lib/static/player/controller/skip-forward.svg"
-    import {mutaState} from "$lib/api/stores/MutaState"
 
     function previous() {
         console.log("Previous")
@@ -26,27 +26,27 @@
 
 <div id="player-controller">
     <Button
-            tooltip="Previous"
-            execute={previous}
-            icon={PreviousSVG}
+        execute={previous}
+        icon={PreviousSVG}
+        tooltip="Previous"
     />
     {#if isPlaying}
         <Button
-                tooltip="Pause"
-                execute={togglePlayPause}
-                icon={PauseSVG}
+            tooltip="Pause"
+            execute={togglePlayPause}
+            icon={PauseSVG}
         />
     {:else}
         <Button
-                tooltip="Play"
-                execute={togglePlayPause}
-                icon={PlaySVG}
+            tooltip="Play"
+            execute={togglePlayPause}
+            icon={PlaySVG}
         />
     {/if}
     <Button
-            tooltip="Next"
-            execute={next}
-            icon={NextSVG}
+        execute={next}
+        icon={NextSVG}
+        tooltip="Next"
     />
 </div>
 

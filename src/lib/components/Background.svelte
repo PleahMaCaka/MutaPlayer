@@ -29,7 +29,7 @@
     {/if}
 
     <div id="bg-content-wrapper">
-        <slot/>
+        <slot />
     </div>
 </div>
 
@@ -60,7 +60,6 @@
 
         animation: slideDown 1s ease-in-out;
         animation-fill-mode: forwards;
-
     }
 
     .bg-image {

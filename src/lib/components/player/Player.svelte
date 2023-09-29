@@ -1,24 +1,24 @@
 <script>
     import Thumbnail from "$lib/components/player/Thumbnail.svelte"
-    import SideButtons from "$lib/components/player/side/SideButtons.svelte";
-    import Holder from "$lib/components/player/Holder.svelte";
-    import Title from "$lib/components/player/Title.svelte";
-    import SubTitle from "$lib/components/player/SubTitle.svelte";
-    import Controller from "$lib/components/player/control/Controller.svelte";
+    import SideButtons from "$lib/components/player/side/SideButtons.svelte"
+    import Holder from "$lib/components/player/Holder.svelte"
+    import Title from "$lib/components/player/Title.svelte"
+    import SubTitle from "$lib/components/player/SubTitle.svelte"
+    import Controller from "$lib/components/player/control/Controller.svelte"
 </script>
 
 <div id="player-wrapper">
-    <SideButtons/>
-    <Thumbnail src="https://cdn.discordapp.com/attachments/968323801253306428/1133442471045648394/thumbanil.png"/>
+    <SideButtons />
+    <Thumbnail src="https://cdn.discordapp.com/attachments/968323801253306428/1133442471045648394/thumbanil.png" />
     <div id="holder-below-contents">
-        <Holder/>
+        <Holder />
         <!-- Automatic sense of darker or lighter background -->
         <!-- to make title/subtitle(author) font color change -->
         <!-- to white or black -->
-        <Title/>
-        <SubTitle/>
+        <Title />
+        <SubTitle />
 
-        <Controller/>
+        <Controller />
     </div>
 </div>
 

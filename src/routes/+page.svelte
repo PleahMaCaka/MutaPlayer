@@ -19,7 +19,7 @@
         Logger.config = {
             debugMode: true,
             useCSSColor: true,
-            disableDate: true,
+            disableDate: true
         }
 
         Logger.info("Hello, Music Lover!")

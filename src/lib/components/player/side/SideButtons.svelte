@@ -1,11 +1,11 @@
 <script>
-    import ConfigButton from "$lib/components/player/side/impl/ConfigButton.svelte";
-    import HideButton from "$lib/components/player/side/impl/HideButton.svelte";
+    import ConfigButton from "$lib/components/player/side/impl/ConfigButton.svelte"
+    import HideButton from "$lib/components/player/side/impl/HideButton.svelte"
 </script>
 
 <div id="side-btn-list">
-    <HideButton/>
-    <ConfigButton/>
+    <HideButton />
+    <ConfigButton />
 </div>
 
 <style>

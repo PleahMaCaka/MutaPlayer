@@ -36,30 +36,6 @@ const webColor: ColorType = {
 }
 
 export class Logger {
-    /**
-     * TODOs
-     * - Use more soft colors (not high contrast)
-     * - Use white for the content text
-     */
-
-    private static date(): string {
-        const date = new Date()
-        const appendZero = (num: number) => ("0" + num).slice(-2)
-
-        const year = appendZero(date.getFullYear())
-        const month = appendZero(date.getMonth() + 1)
-        const day = appendZero(date.getDate())
-
-        const hours = appendZero(date.getHours())
-        const minutes = appendZero(date.getMinutes())
-        const seconds = appendZero(date.getSeconds())
-
-        const c_date = `${year}-${month}-${day}`
-        const c_time = `${hours}:${minutes}:${seconds}`
-
-        return this.config.disableDate ? `[${c_time}] ::` : `[${c_date} ${c_time}] ::`
-    }
-
     public static config: {
         debugMode?: boolean
         useCSSColor?: boolean
@@ -115,6 +91,30 @@ export class Logger {
         } else {
             console.error(termColor.red + termColor.bold, `${this.date()} [CRITICAL] :: ${content}`, termColor.reset)
         }
+    }
+
+    /**
+     * TODOs
+     * - Use more soft colors (not high contrast)
+     * - Use white for the content text
+     */
+
+    private static date(): string {
+        const date = new Date()
+        const appendZero = (num: number) => ("0" + num).slice(-2)
+
+        const year = appendZero(date.getFullYear())
+        const month = appendZero(date.getMonth() + 1)
+        const day = appendZero(date.getDate())
+
+        const hours = appendZero(date.getHours())
+        const minutes = appendZero(date.getMinutes())
+        const seconds = appendZero(date.getSeconds())
+
+        const c_date = `${year}-${month}-${day}`
+        const c_time = `${hours}:${minutes}:${seconds}`
+
+        return this.config.disableDate ? `[${c_time}] ::` : `[${c_date} ${c_time}] ::`
     }
 
 }
